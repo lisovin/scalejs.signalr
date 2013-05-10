@@ -1,0 +1,14 @@
+
+*.user
+/build
+/obj
+/packages
+/scalejs.signalr.v11.suo
+/scalejs.signalr.csproj.user
+/TestResults
+/.nuget/nuget.exe
+/scalejs.signalr/build
+/scalejs.signalr/obj
+/scalejs.signalr/scalejs.signalr.csproj.user
+/scalejs.signalr.test/build
+/scalejs.signalr.test/obj
