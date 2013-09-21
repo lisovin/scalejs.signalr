@@ -12,7 +12,8 @@ define([
     core.registerExtension({
         signalr: {
             createHub: hub.create,
-            startHub : hub.start
+            startHub: hub.start,
+            onConnected: hub.onConnected
         }
     });
 });

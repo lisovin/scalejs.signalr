@@ -1,12 +1,13 @@
-﻿/*global define*/
-define([
+
+/*global define*/
+define('scalejs.signalr/hub',[
     'scalejs!core',
     'jQuery'
 ], function (
     core,
     $
 ) {
-    'use strict';
+    
 
     var listeners = [];
 
@@ -40,3 +41,23 @@ define([
     };
 });
 
+
+/*global define*/
+define('scalejs.signalr',[
+    'scalejs!core',
+    'scalejs.signalr/hub',
+    'signalr.hubs'
+], function (
+    core,
+    hub
+) {
+    
+
+    core.registerExtension({
+        signalr: {
+            createHub: hub.create,
+            startHub: hub.start,
+            onConnected: hub.onConnected
+        }
+    });
+});

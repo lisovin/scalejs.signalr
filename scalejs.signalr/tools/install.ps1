@@ -3,7 +3,7 @@
 $project |
 	Add-Paths "{
 		'scalejs.signalr' : 'Scripts/scalejs.signalr-$($package.Version)',
-		'jquery.signalr' : 'Scripts/jquery.signalR-1.0.1',
+		'jquery.signalr' : 'Scripts/jquery.signalR-1.1.3',
 		'signalr.hubs':  '/signalr/hubs?'
 	}" |
 	Add-ScalejsExtension 'scalejs.signalr' |
